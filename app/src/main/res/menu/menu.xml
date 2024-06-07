@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Agregar UpButton como un elemento de menú -->
+
 
     <item
         android:id="@+id/recyclerFragment"
@@ -19,6 +21,5 @@
         android:icon="@drawable/baseline_perm_contact_calendar_24"
         android:title="@string/Usuarios"
         app:showAsAction="ifRoom"/>
-
 
 </menu>

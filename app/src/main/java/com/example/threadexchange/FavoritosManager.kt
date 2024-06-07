@@ -8,6 +8,9 @@ object FavoritosManager {
             favoritosList.add(ropa)
         }
     }
+    fun eliminarDeFavoritos(ropa: Ropa) {
+        favoritosList.remove(ropa)
+    }
 
     fun obtenerFavoritos(): List<Ropa> {
         return favoritosList

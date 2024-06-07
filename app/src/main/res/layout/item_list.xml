@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:paddingBottom="16dp">
 
-    <!--  ******************* PASO 11 *************  -->
     <ImageView
         android:id="@+id/ivFoto"
         android:layout_width="100dp"

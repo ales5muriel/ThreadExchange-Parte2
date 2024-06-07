@@ -37,6 +37,7 @@ class MenuFragment : Fragment() {
         binding.btnLista.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_recyclerFragment)
         }
+
         return binding.root
     }
 }

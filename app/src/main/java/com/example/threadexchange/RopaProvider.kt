@@ -8,7 +8,7 @@ class RopaProvider {
                 "Polo Ralph",
                 "Ralph Lauren" ,
                 "M" ,
-                "https://www.google.com/search?client=opera&hs=tLV&sca_esv=30c453807a2cab8d&sxsrf=ADLYWILuSs02qSJR2VeCsnPt8Nvrc-OKHg:1717574249291&q=polo+ralph+lauren&uds=ADvngMgM3sJHGRUUapkgumPBd1g4--ZmzlV-Bm36gXpBctX7sCDfbrx_X3VxwuFTKMC-kyp1OE_VvIr3qEOI1Llv_7N7hyn6tNW5Ocl8ktsmANtrEty1GXwJ_y2YuJOw4YxiOw-0w6mSSeTUkH8s2-5ebV8q8Ahae4JvzodOdk-jiSDEEvL_V-1JVNEBvybzvQoW4nTIp5BYtqGH6d0DD9N-E-rvPfnAKlUXsi-QNgjsiTp_1EORQEeS2277zbU2RxXBZz1ttayrxRahPbsKA3FyH6DMfSLNqC0COPH38QueiUTqjv9hEstH3Mcyzxy79IBIP1dn5-avpUAW9wHJR-CpdR44uPYpDg&udm=2&prmd=ivnbz&sa=X&ved=2ahUKEwjh_YPY_sOGAxXR7AIHHRqAAM0QtKgLegQIFhAB&biw=1482&bih=703&dpr=1.25#vhid=NJQJEiW7_CXlGM&vssid=mosaic",
+                "https://www.zalando.es/polo-ralph-lauren-sudadera-white-po222s05c-a12.html",
                 1
             ),
 

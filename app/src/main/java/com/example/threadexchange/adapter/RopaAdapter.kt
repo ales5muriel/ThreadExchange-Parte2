@@ -10,6 +10,7 @@ import androidx.navigation.findNavController
 import com.example.threadexchange.R
 
 
+
 class RopaAdapter(private val listRopa: List<Ropa>, private val onClickListener: (Ropa) -> Unit) : RecyclerView.Adapter<RopaViewHolder>()  {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RopaViewHolder {
@@ -20,6 +21,7 @@ class RopaAdapter(private val listRopa: List<Ropa>, private val onClickListener:
     override fun getItemCount(): Int = listRopa.size
 
     override fun onBindViewHolder(holder: RopaViewHolder, position: Int) {
+
             holder.render(listRopa[position], onClickListener)
         holder.binding.buttonDetalles.setOnClickListener {
             val itemId = listRopa[holder.adapterPosition].id
@@ -30,5 +32,6 @@ class RopaAdapter(private val listRopa: List<Ropa>, private val onClickListener:
         }
 
     }
+
 
 }

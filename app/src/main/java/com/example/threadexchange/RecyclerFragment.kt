@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.threadexchange.RopaProvider.Companion.listRopa
 import com.example.threadexchange.adapter.RopaAdapter
 import com.example.threadexchange.databinding.FragmentRecyclerBinding
 
@@ -35,6 +36,13 @@ private var _binding: FragmentRecyclerBinding? = null
 
         binding.btnPerfil.setOnClickListener {
             findNavController().navigate(R.id.action_recyclerFragment_to_userInfoFragment2)
+        }
+
+        // Configurar el adaptador
+        val adapter = RopaAdapter(listRopa) { ropa ->
+            // Mostrar un Toast con el nombre del producto seleccionado
+            Toast.makeText(requireContext(), "Seleccionaste: ${ropa.Nombre}", Toast.LENGTH_SHORT).show()
+            agregarAFavoritos(ropa)
         }
         return binding.root
 

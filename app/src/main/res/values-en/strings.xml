@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ThreadExchange</string>
+    <string name="nombre">What\'s your name?</string>
+    <string name="bienvenida">Welcome to ThreadExchange!</string>
+    <string name="creditos">Start</string>
+    <string name="info">%s, you\'re using version 1 of ThreadExchange</string>
+    <string name="contenido">In this version, a contact button with the developer has been added.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Ropa" />
+    <string name="item_list_title"> Clothing </string>
+    <string name="salir"> Exit </string>
+    <string name="Descripcion"> Description </string>
+    <string name="agregar_comentario_desc">Add private comment</string>
+    <string name="textoCP">For over 50 years, the brand has continued to lead the flagship hybridization of military, work, and sports archive models, combining them with Italian textile innovation.</string>
+    <string name="item_list_fav"> Favorite Garments and Items </string>
+    <string name="Creditos">Go to credits</string>
+    <string name="Prendas">Garments</string>
+    <string name="movil">mobile</string>
+    <string name="marca">brand</string>
+    <string name="tamano">Size</string>
+    <string name="volver">Back</string>
+    <string name="favoritos">Favorites</string>
+    <string name="lista">List</string>
+    <string name="detalles">Details</string>
+    <string name="NombreUsuario">Username: Alejandro Morcillo</string>
+    <string name="Text">The favorites list is empty</string>
+    <string name="user_info_title">User Information</string>
+    <string name="thread_exchange_es_m_s_que_una_aplicaci_n_es_un_portal_din_mico_hacia_el_mundo_de_la_moda_con_un_enfoque_en_la_ropa_y_accesorios_nuestra_plataforma_ofrece_a_los_entusiastas_de_la_moda_una_experiencia_nica_de_intercambio_descubrimiento_y_estilo">Thread Exchange is more than an application; it\'s a dynamic portal to the world of fashion. With a focus on clothing and accessories, our platform offers fashion enthusiasts a unique experience of exchange, discovery, and style.</string>
+    <string name="Favoritos">Favorites</string>
+    <string name="ir_a_favoritos">Go to Favorites</string>
+    <string name="ubicaci_n_huelva_espa_a">Location: Huelva, Spain</string>
+    <string name="edad_26_a_os">Age: 26 years</string>
+    <string name="correo_electr_nico_alexmm1998_gmail_com">Email: alexmm1998@gmail.com</string>
+    <string name="Usuarios">Users</string>
+    <string name="descripcion_favoritos">Add to favorites</string>
+</resources>
