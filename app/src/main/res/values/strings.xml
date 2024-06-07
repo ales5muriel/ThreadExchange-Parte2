@@ -29,7 +29,7 @@
     <string name="Favoritos">Favoritos</string>
     <string name="Usuarios">Usuarios</string>
     <string name="descripcion_favoritos">Agregar a favoritos</string>
-    <string name="up_button_title" />
+    <string name="up_button_title" translatable="false" />
     <string name="thread_exchange_es_m_s_que_una_aplicaci_n_es_un_portal_din_mico_hacia_el_mundo_de_la_moda_con_un_enfoque_en_la_ropa_y_accesorios_nuestra_plataforma_ofrece_a_los_entusiastas_de_la_moda_una_experiencia_nica_de_intercambio_descubrimiento_y_estilo">Thread Exchange es más que una aplicación; es un portal dinámico hacia el mundo de la moda. Con un enfoque en la ropa y accesorios, nuestra plataforma ofrece a los entusiastas de la moda una experiencia única de intercambio, descubrimiento y estilo.</string>
     <string name="ubicaci_n_huelva_espa_a">Ubicación: Huelva, España</string>
     <string name="edad_26_a_os">Edad: 26 años</string>
