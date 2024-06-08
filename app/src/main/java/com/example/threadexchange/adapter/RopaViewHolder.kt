@@ -16,19 +16,13 @@ class RopaViewHolder(view: View) : RecyclerView.ViewHolder(view){
     val Marca = view.findViewById<TextView>(R.id.tvMarca)
     val Tamano = view.findViewById<TextView>(R.id.tvTamano)
     val foto = view.findViewById<ImageView>(R.id.ivFoto)
-    //val detallesButton = view.findViewById<Button>(R.id.buttonDetalles)
 
     val binding = ItemListBinding.bind(view)
-
     fun render(RopaModel: Ropa, onClickListener: (Ropa) -> Unit){
         Nombre.text = RopaModel.Nombre
         Marca.text = RopaModel.Marca
         Tamano.text = RopaModel.Talla
-        Glide.with(itemView.context).load(RopaModel.foto).into(foto)
-
-        // Configurar el clic para el elemento completo del item
-        itemView.setOnClickListener {
-            onClickListener(RopaModel)
-        }
+        Glide.with(foto.context).load(RopaModel.foto).into(foto)
+        itemView.setOnClickListener {onClickListener(RopaModel) }
     }
 }
