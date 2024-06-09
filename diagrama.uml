@@ -1,0 +1,185 @@
+@startuml
+' Paquete com.example
+package com.example {
+
+    ' Clases del paquete com.example
+    class ThreadExchange {
+    }
+
+    class ItemListFragment {
+        - FragmentItemListBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + onViewCreated(view: View, savedInstanceState: Bundle?)
+        + iniciarRecyclerView()
+        + onItemSelected(datos: Datos)
+        + onDestroyView()
+    }
+
+    class FragmentNegro {
+        - FragmentNegroBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + onDestroyView()
+        + closeFragment()
+    }
+
+    class Datos {
+    }
+
+    class ReciclerViewActivity {
+        - FragmentReciclerViewBinding binding
+        + onCreate(savedInstanceState: Bundle?)
+        + iniciarRecyclerView()
+        + onItemSelected(datos: Datos)
+    }
+
+    class MainActivity {
+        - ActivityMainBinding binding
+        + onCreate(savedInstanceState: Bundle?)
+        + onSupportNavigateUp(): Boolean
+    }
+
+    class FragmentBlanco {
+        - FragmentBlancoBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+    }
+
+    class ViewPagerFragment {
+        - FragmentViewPagerBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+    }
+
+    class RopaProvider$Companion {
+        + item_list
+    }
+
+    class RopaProvider {
+    }
+
+    class ReciclerViewFragment {
+        - FragmentReciclerView2Binding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + onViewCreated(view: View, savedInstanceState: Bundle?)
+        + iniciarRecyclerView()
+        + onItemSelected(datos: Datos)
+        + onDestroyView()
+    }
+
+    class UserInfoFragment {
+        - FragmentUserInfoBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + onViewCreated(view: View, savedInstanceState: Bundle?)
+    }
+
+    class RopaViewHolder {
+        + binding
+        + render(datos: Datos, callback: (Datos) -> Unit)
+    }
+
+    class DetailItemFragment {
+        - FragmentDetailItemBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + onViewCreated(view: View, savedInstanceState: Bundle?)
+        + onDestroyView()
+    }
+
+    class ViewPagerAdapter {
+        + getItemCount(): Int
+        + createFragment(position: Int): Fragment
+    }
+
+    class MainFragment {
+        - FragmentMainBinding? _binding
+        + binding
+        + onCreate(savedInstanceState: Bundle?)
+        + onDestroy()
+    }
+
+    class LoginFragment {
+        - FragmentLoginBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+    }
+
+    class MenuFragment {
+        - FragmentMenuBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+    }
+
+    class CreditFragment$Companion {
+        + newInstance()
+    }
+
+    class CreditFragment {
+        - FragmentCreditBinding? _binding
+        + binding
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + onViewCreated(view: View, savedInstanceState: Bundle?)
+        + onDestroyView()
+    }
+
+    class RopaAdapter {
+        + RopaViewHolder onCreateViewHolder(parent: ViewGroup, viewType: Int)
+        + getItemCount(): Int
+        + onBindViewHolder(holder: JuegoViewHolder, position: Int)
+    }
+
+    class FavItemListFragment$Companion {
+        + newInstance(param1: String, param2: String)
+    }
+
+    class FavItemListFragment {
+        - param1: String?
+        - param2: String?
+        + onCreate(savedInstanceState: Bundle?)
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + showToast(message: String)
+    }
+
+    class ViewHolder {
+    }
+
+    class Adapter {
+    }
+
+    class SplashActivity {
+        + onCreate(savedInstanceState: Bundle?)
+    }
+}
+
+' Paquetes de librerías AndroidX y AppCompat
+package androidx.fragment.app {
+    class Fragment {
+        + onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
+        + onViewCreated(view: View, savedInstanceState: Bundle?)
+    }
+
+    class FragmentStateAdapter {
+        + getItemCount(): Int
+        + createFragment(position: Int): Fragment
+    }
+}
+
+package androidx.appcompat.app {
+    class AppCompatActivity {
+        + onCreate(savedInstanceState: Bundle?)
+    }
+}
+
+' Relaciones
+
+' Relaciones dentro del paquete com.example
+RopaAdapter --> RopaViewHolder : usa
+RopaAdapter --> Ropa : muestra
+
+FavItemListFragment --> RopaProvider : depende
+
+' Relaciones
+@enduml
