@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.threadexchange.RopaProvider.Companion.listRopa
 import com.example.threadexchange.adapter.RopaAdapter
@@ -49,6 +50,7 @@ private var _binding: FragmentRecyclerBinding? = null
     }
 
      fun initializeRecyclerView() {
+
          val ropaList = RopaProvider.listRopa
          if (ropaList == null || ropaList.isEmpty()) {
              Toast.makeText(requireContext(), "No hay datos disponibles", Toast.LENGTH_SHORT).show()
@@ -59,8 +61,7 @@ private var _binding: FragmentRecyclerBinding? = null
          binding.rRopa.adapter = RopaAdapter(ropaList) { ropa ->
              onItemSelected(ropa)
          }
-         // Añadir la decoración de ítems al RecyclerView
-        // binding.rRopa.addItemDecoration(decoration)
+
 }
     fun onItemSelected(Ropa: Ropa) {
         Toast.makeText(requireContext(),

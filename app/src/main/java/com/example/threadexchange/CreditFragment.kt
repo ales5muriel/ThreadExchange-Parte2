@@ -19,7 +19,6 @@ class CreditFragment : Fragment() {
 
         }
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,6 +27,8 @@ class CreditFragment : Fragment() {
         _binding = FragmentCreditBinding.inflate(inflater,container,false)
         return binding.root
     }
-
-
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

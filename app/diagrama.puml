@@ -1,0 +1,36 @@
+@startuml
+
+' Definición de las clases
+class ViewPagerFragment
+class UserInfoFragment
+class CreditActivity
+class SplashActivity
+class CreditFragment
+class RopaAdapter
+class ViewPagerAdapter
+class DetailItemFragment
+class DetailFavItemFragment
+class FavItemListFragment
+class RopaProvider
+class Ropa
+class RecyclerFragment
+class MenuFragment
+class MainActivity
+class ItemListFragment
+class FragmentNegro
+class FragmentBlanco
+class RopaViewHolder
+class FavoritosManager
+class Login2Fragment
+
+' Ejemplo de relaciones (puedes ajustar según tu diseño)
+MainActivity --|> FragmentNegro
+MainActivity --|> FragmentBlanco
+MainActivity --|> MenuFragment
+MenuFragment --|> RecyclerFragment
+RecyclerFragment --|> RopaViewHolder
+ViewPagerAdapter --|> ViewPagerFragment
+RopaAdapter --|> RopaViewHolder
+RopaProvider --|> Ropa
+
+@enduml

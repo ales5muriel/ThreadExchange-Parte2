@@ -36,10 +36,10 @@ class ItemListFragment : Fragment() {
     }
     private fun onItemSelected(datos: Ropa) {
         val bundle = Bundle().apply {
-            putString("juegoNombre", datos.Nombre)
-            putString("juegoMarca", datos.Marca)
-            putString("juegoTamano", datos.Talla)
-            putString("juegoFoto", datos.foto)
+            putString("ropaNombre", datos.Nombre)
+            putString("ropaMarca", datos.Marca)
+            putString("ropaTamano", datos.Talla)
+            putString("ropaFoto", datos.foto)
         }
        // findNavController().navigate(R.id.action_itemListFragment_to_detailItemFragment, bundle)
     }
